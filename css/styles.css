@@ -8,16 +8,29 @@ html{
    box-sizing: inherit;
    max-width: 100%;
 }
-a{
+
+a {
    color:inherit;
    text-decoration: none;
 }
-.header{
-   display: flex;
-   min-height: 100vh;
-   background: rgb(0,0,0);
-   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(87,184,255,1) 60%);
+
+ul {
+   list-style: none;
+   font-family: 'Orbitron', sans-serif;
+   cursor: pointer;
 }
+body {
+   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.88) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; */
+   background-color: #000;
+   font-size: 16px;
+   color: #000;
+   font-weight: 500;
+   line-height: 1.2; 
+   padding: 0;
+   margin: 0;
+}
+
+
 .container{
    max-width: 1320px;
    padding: 0 15px;
@@ -25,7 +38,18 @@ a{
    /* margin-left: 60px;
    margin-right: 60px; */
 }
-.header__top{
+
+
+/*==================  Header Section ===================*/
+
+.header {
+   display: flex;
+   min-height: 100vh;
+   background: rgb(0,0,0);
+   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 58%, rgba(87,184,255,1) 58%);
+}
+
+.header__top {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -33,36 +57,49 @@ a{
    /* gap: 222px; */
    /* padding-bottom: 222px; */
 }
-.menu{
+.menu {
    display: flex;
    gap: 167px;
    align-items: center;
 }
 
+.buy {
+   position: relative;
+}
 
-ul{
-   list-style: none;
-   font-family: 'Orbitron', sans-serif;
-   cursor: pointer;
+.buy::after {
+   position: absolute;
+   content: "0";
+   top: -10px;
+   right: -20px;
+   font-size: 12px;
+   background-color: #fff;
+   border-radius: 100%;
+   padding: 3px 6px;
 }
-body{
-   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.88) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; */
-   background-color: #000;
-   font-size: 16px;
-   color: #000;
-   font-weight: 500;
-   line-height: 1.2; 
-   
-  
+
+.text__decoration {
+   position: relative;
 }
-.menu__list{
+
+.text__decoration::after {
+   position: absolute;
+   content: ' ';
+   left: 0;
+   bottom: -5px;
+   width: 100%;
+   height: 16px;
+   background: url('../images/IMAGE-text-decoration.svg')center center no-repeat ;
+}
+
+.menu__list {
    display: flex;
    flex-direction: row;
    gap: 60px;
    justify-content: center;
    /* padding: 0px 90.281px 0px 89.781px; */
 }
-button{
+button {
    padding: 0;
    border: none;
    background-color: transparent;
@@ -70,13 +107,12 @@ button{
    color: white;
    font-family: 'Orbitron', sans-serif;
 }
-.menu__too{
+.menu__too {
    display: flex;
    align-items: center;
    gap: 40px;
-   
-
 }
+
 li{
    --s: 0.1rem;   
    --c: rgb(0, 38, 255); 
@@ -107,7 +143,7 @@ li:hover {
    transform: rotate(270deg);
    transform-origin: left bottom; 
    white-space: nowrap; 
-   width: 500px;
+   max-width: 600px;
 
  }
 
@@ -138,6 +174,7 @@ li:hover {
    font-style: normal;
    font-weight: 400;
    line-height: 28px; 
+   margin-bottom: 50px;
  }
  .text__left{
    color: #FFF;
@@ -154,13 +191,13 @@ li:hover {
    
 }
 .expvie__btn{
-   padding-left: 0;
    display: flex;
    align-items: center;
+   padding-left: 0;
    gap: 40px;
 }
 .explore__btn{
-   border: 2px solid white;
+   border: 2px solid #57B8FF;
    padding-right: 31px;
    padding-bottom: 16px;
    padding-left: 31px;
@@ -170,12 +207,14 @@ li:hover {
    font-size: 18px;
    display: inline-block;
    transition: background-color 0.3s ease;
+   background-color: #57B8FF;
 }
 .explore__btn:hover{
-   background-color:#57B8FF;
+   background-color: transparent;
+   border: 2px solid #fff;
 }
 .view__btn{
-   border: 2px solid white;
+   border: 2px solid transparent;
    padding-right: 31px;
    padding-bottom: 16px;
    padding-left: 31px;
@@ -184,11 +223,22 @@ li:hover {
    font-family: 'Orbitron', sans-serif;
    font-size: 18px;
    display: inline-block;
-   transition: background-color 0.3s ease; 
+   transition: border 0.3s ease; 
 }
 .view__btn:hover{
-   background-color: #57B8FF;
+   border: 2px solid #fff;
 }
+
+
+/*================== END Header Section ===================*/
+
+
+
+
+
+
+
+/*==================  Sponsors Section ===================*/
 
 .sponsors{
    background-color: #FDD04A;
