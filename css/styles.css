@@ -39,6 +39,25 @@ body {
    margin-right: 60px; */
 }
 
+.text__decoration {
+   position: relative;
+}
+
+.text__decoration::after {
+   position: absolute;
+   content: ' ';
+   left: 0;
+   bottom: -9px;
+   width: 100%;
+   height: 16px;
+}
+.text__decoration--yellow::after {
+   background: url('../images/IMAGE-text-decoration.svg')center center no-repeat;
+}
+.text__decoration--blue::after {
+   background: url('../images/text-decoration-blue.svg')center center no-repeat;
+}
+
 
 /*==================  Header Section ===================*/
 
@@ -78,19 +97,6 @@ body {
    padding: 3px 6px;
 }
 
-.text__decoration {
-   position: relative;
-}
-
-.text__decoration::after {
-   position: absolute;
-   content: ' ';
-   left: 0;
-   bottom: -5px;
-   width: 100%;
-   height: 16px;
-   background: url('../images/IMAGE-text-decoration.svg')center center no-repeat ;
-}
 
 .menu__list {
    display: flex;
@@ -159,7 +165,8 @@ li:hover {
    color: #80858F;
    
  }
- .text__fire{
+ .section__title,
+ .text__fire {
    color: #57B8FF;
    font-family: 'Orbitron', sans-serif;
    font-size: 16px;
@@ -167,7 +174,9 @@ li:hover {
    align-items: center;
    gap: 8px;
  }
- .content_text-p{
+
+ .section__text, 
+ .content_text-p {
    color: #999;
    font-family: 'Orbitron', sans-serif;
    font-size: 18px;
@@ -176,6 +185,8 @@ li:hover {
    line-height: 28px; 
    margin-bottom: 50px;
  }
+
+ .section__subtitle,
  .text__left{
    color: #FFF;
    font-family: 'Orbitron', sans-serif;
@@ -240,33 +251,29 @@ li:hover {
 
 /*==================  Sponsors Section ===================*/
 
-.sponsors{
+.sponsors {
    background-color: #FDD04A;
+   text-align: center;
 }
-.title__spon{
+.title__spon {
    color: #222730;
    font-family: 'Orbitron', sans-serif;
    text-align: center;
    font-size: 48px;
-   padding-right: 533px;
-   padding-left: 533px;
+   font-weight: 400;
    padding-top: 125px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    margin: 0;
 }
-.spon__p{
+
+.spon__p {
    color: #555;
-   font-family: 'Orbitron', sans-serif;
    text-align: center;
-   font-size: 16px;
+   font-size: 1rem;
    font-style: normal;
-   width: 525px;
-   height: 62px;
-   margin-top: 27px;
+   max-width: 533px;
+   margin: 27px auto;
 }
-.sponsors__image{
+.sponsors__image {
    display: flex;
    justify-content: center;
    gap: 32px;
@@ -274,21 +281,37 @@ li:hover {
    padding-bottom: 125px;
    margin-bottom: 0px;
 }
-.gaming{
+
+/*=========================== END Sponsors Section =============================*/
+
+
+
+
+
+
+/* =========================== Gaming Section ================================= */
+
+.gaming {
    background-image: url(../images/foune.png);
    background-repeat: no-repeat;
    background-position: top center;
    background-size: cover;
-   
+   padding: 130px 0;
 }
-.oll_text{
+
+.oll_text {
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
    align-items: center;
-   padding-top: 136px;
+   margin-bottom: 65px;
 }
-.text__left-too{
+
+.text__fire {
+   margin-bottom: 10px;
+}
+
+.text__left-too {
    color: #FFF;
    text-align: center;
    font-family: 'Orbitron';
@@ -297,9 +320,12 @@ li:hover {
    font-weight: 400;
    line-height: 74px; 
    text-transform: capitalize;
-   width: 716px;
+   max-width: 716px;
+   margin-bottom: 40px;
+   margin-top: 0;
 }
-.content_text-too{
+
+.content_text-too {
    color: rgba(223, 223, 223, 0.80);
    text-align: center;
    font-family: 'Orbitron';
@@ -307,6 +333,97 @@ li:hover {
    font-style: normal;
    font-weight: 400;
    line-height: 32px; 
-   width: 698px;
-   margin-top: 39px;
+   max-width: 698px;
+}
+
+.gaming__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+
+   font-family: Orbitron;
+}
+
+.gaming__items {
+   flex: 1 1 48%;
+
+   border-radius: 20px;
+   background: rgba(255, 255, 255, 0.15);
+
+   padding: 35px 35px 35px 80px;
+   transition: background .3s ease;
+   cursor: pointer;
+}
+
+.gaming__items:hover {
+   background: rgba(255, 255, 255, 0.35);
+}
+
+.gaming__title {
+   position: relative;
+   font-weight: 400;
+   color: #fff;
+   font-size: 32px;
+   line-height: 42px;
+
+   margin-bottom: 20px;
+}
+
+.gaming__title::before {
+   position: absolute;
+   content: ' ';
+   left: -40px;
+   top: 5px;
+   width: 30px;
+   height: 30px;
+   background: url('../images/gaming-list-image.svg')center center no-repeat;
+}
+
+.gaming__text {
+   color: #dfdfdf;
+   font-size: 18px;
+   line-height: 28px;
+   font-weight: 400;
+}
+
+/* =========================== END Gaming Section ================================= */
+
+
+
+
+/* =============================== About section ================================== */
+
+.about {
+   padding: 130px 0;
+}
+
+.about__wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.about__left {
+   flex: 0 1 55%;
+}
+
+.about__right {
+   flex: 0 1 35%;
+   max-width: 490px;
+}
+
+.about__img {
+   position: relative;
+}
+
+.about__img::after {
+   position: absolute;
+   content: '';
+   left: 0;
+   top: 0;
+   width: 129px;
+   height: 129px;
+   background: url('../images/about-img-video.svg') center center no-repeat;
+   z-index: 1;
 }
