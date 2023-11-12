@@ -14,20 +14,24 @@ a{
 }
 .header{
    display: flex;
+   min-height: 100vh;
+   background: rgb(0,0,0);
+   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(87,184,255,1) 60%);
 }
 .container{
-   max-width: 1820px;
-   padding: 0 10px;
+   max-width: 1320px;
+   padding: 0 15px;
    margin: 0 auto;
-   margin-left: 60px;
-   margin-right: 60px;
+   /* margin-left: 60px;
+   margin-right: 60px; */
 }
 .header__top{
    display: flex;
    align-items: center;
+   justify-content: space-between;
    flex-wrap: nowrap;
-   gap: 222px;
-   padding-bottom: 222px;
+   /* gap: 222px; */
+   /* padding-bottom: 222px; */
 }
 .menu{
    display: flex;
@@ -42,7 +46,8 @@ ul{
    cursor: pointer;
 }
 body{
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.88) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.88) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat; */
+   background-color: #000;
    font-size: 16px;
    color: #000;
    font-weight: 500;
@@ -55,7 +60,7 @@ body{
    flex-direction: row;
    gap: 60px;
    justify-content: center;
-   padding: 0px 90.281px 0px 89.781px;
+   /* padding: 0px 90.281px 0px 89.781px; */
 }
 button{
    padding: 0;
@@ -96,14 +101,22 @@ li:hover {
    
  }
  .vertical-text {
-   transform: rotate(90deg);
+   display: flex;
+   justify-content: center;
+
+   transform: rotate(270deg);
    transform-origin: left bottom; 
    white-space: nowrap; 
    width: 500px;
+
  }
+
  .header__content{
    display: flex;
+   align-items: center;
+   margin-top: 10%;
  }
+
  .menu__social{
    display: flex;
    gap: 30px;
@@ -191,6 +204,7 @@ li:hover {
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin: 0;
 }
 .spon__p{
    color: #555;
