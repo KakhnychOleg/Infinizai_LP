@@ -191,6 +191,10 @@ li:hover {
    margin-bottom: 50px;
  }
 
+.section__subtitle {
+   margin: 15px 0 35px 0;
+}
+
  .section__subtitle,
  .text__left{
    color: #FFF;
@@ -586,3 +590,97 @@ li:hover {
 }
 
 /* =============================== END multiplayer section ================================== */
+
+
+
+
+/* ===============================  News section ================================== */
+
+.news {
+   padding: 130px 0;
+   
+   font-family: Orbitron;
+}
+
+.news__wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 25px;
+}
+
+.post-wrap {
+   align-items: top;
+   margin-top: 30px;
+   flex-wrap: wrap;
+}
+
+/* .news__right, */
+.post__right,
+.post__left,
+.news__left {
+   flex: 0 1 49%;
+}
+
+.post__right {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 40px;
+   column-gap: 25px;
+}
+
+.post-small {
+   flex: 1 1 48%;
+}
+
+.news__date {
+   color: #57B8FF;
+
+   font-style: normal;
+   font-weight: 400;
+}
+
+.img-big {
+   margin-bottom: 50px;
+}
+
+.img-small {
+   margin-bottom: 30px;
+}
+
+.date-big {
+   font-size: 18px;
+   line-height: 18px; /* 100% */
+
+   margin-bottom: 30px;
+}
+
+.date-small {
+   font-size: 16px;
+   line-height: 16px; /* 100% */
+
+   margin-bottom: 20px;
+}
+
+.news__title {
+   color: #FFF;
+
+   font-style: normal;
+   font-weight: 400;
+   text-transform: capitalize;
+   margin: 0;
+}
+
+.title-big {
+   font-size: 36px;
+   line-height: 46px; /* 127.778% */
+}
+
+.title-small {
+   font-size: 23px;
+   line-height: 34px; /* 127.778% */
+}
+
+
+/* =============================== END News section ================================== */
