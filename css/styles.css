@@ -634,6 +634,21 @@ li:hover {
    flex: 1 1 48%;
 }
 
+.post {
+   display: inline-block;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.post__img {
+   transition: all .3s ease; 
+   display: block;
+}
+
+.post__img:hover {
+   transform: scale(1.05);
+}
+
 .news__date {
    color: #57B8FF;
 
