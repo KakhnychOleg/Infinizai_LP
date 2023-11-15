@@ -466,7 +466,7 @@ li:hover {
 }
 .section__customize-title {
    font-size: 64px;
-   
+
    margin-bottom: 35px;
    margin-top: 15px;
 }
@@ -521,3 +521,68 @@ li:hover {
  }
 
 /* =============================== END Customize section ================================== */
+
+
+
+
+
+/* ===============================  multiplayer section ================================== */
+
+.multiplayer {
+   display: flex;
+   width: 100%;
+}
+
+.multiplayer__items {
+   flex: 1 1 33.3%;
+   min-height: 732px;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.multiplayer__item {
+   transition: transform .3s ease;
+}
+
+.items-mult {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.items-mult:hover > .multiplayer__item {
+   transform: translateY(-15px);
+   -webkit-transform: translateY(-15px);
+}
+
+.items-1 {
+   background: url('../images/multiplayer-1.png') center center no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.items-2 {
+   background: url('../images/multiplayer-2.png') center center no-repeat;
+   background-size: cover;
+}
+
+.items-3 {
+   background: url('../images/multiplayer-3.png') center center no-repeat;
+   background-size: cover;
+}
+
+.multiplayer__title {
+   color: #FFF;
+   font-family: Orbitron;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 58px; /* 120.833% */
+   text-align: center;
+}
+
+.multiplayer__icon {
+   text-align: center;
+}
+
+/* =============================== END multiplayer section ================================== */
