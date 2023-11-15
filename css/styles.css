@@ -442,6 +442,12 @@ li:hover {
    border-radius: 110px;
 }
 
+/* =========================== END About Section ================================= */
+
+
+
+
+
 /* =============================== Customize section ================================== */
 
 
@@ -458,7 +464,9 @@ li:hover {
    display: flex;
    gap: 19px;
 }
-.section__customize-title{
+.section__customize-title {
+   font-size: 64px;
+   
    margin-bottom: 35px;
    margin-top: 15px;
 }
