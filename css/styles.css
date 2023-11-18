@@ -47,6 +47,7 @@ body {
    position: absolute;
    content: ' ';
    left: 0;
+   right: 0;
    bottom: -9px;
    width: 100%;
    height: 16px;
@@ -699,3 +700,66 @@ li:hover {
 
 
 /* =============================== END News section ================================== */
+
+
+
+
+/* ===============================Join Section ======================================= */
+
+.join {
+   padding: 130px 0;
+   background: url('../images/join-bg.png') center center no-repeat;
+   background-size: cover;
+   text-align: center;
+}
+
+._text-black {
+   color: #141820;
+}
+
+._mt-30 {
+   margin-top: 30px;
+}
+
+._max-w-text {
+   max-width: 845px;
+   margin: 0 auto;
+}
+
+.form {
+   margin-top: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: Orbitron;
+}
+
+.form-input {
+   padding: 24px 0 24px 15px;
+   border: 0;
+   width: 100%;
+   max-width: 445px;
+   outline: none;
+}
+
+.form-input,
+.form-input::placeholder {
+   color: #555;
+
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+}
+
+.form-btn {
+   background: #57B8FF;
+   width: 100%;
+   max-width: 206px;
+   padding: 20px 15px;
+   color: #FFF;
+   text-align: center;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 28px; 
+}
