@@ -489,8 +489,8 @@ li:hover {
    margin: 30px auto;
    width: 270px;
    height: 110px;
-   border-radius: 40px;
- box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+   border-radius: 20px;
+   box-shadow: 5px 5px 30px 7px rgba(#3B3D46;), -5px -5px 30px 7px rgba(#3B3D46;);
    cursor: pointer;
    transition: 0.4s;
  }
@@ -499,6 +499,7 @@ li:hover {
    width: inherit;
    height: inherit;
    border-radius: 40px;
+   
  }
  
  .card .card_image img {
@@ -506,6 +507,7 @@ li:hover {
    height: inherit;
    border-radius: 40px;
    object-fit: cover;
+   
  }
  
  .card .card_title {
@@ -516,12 +518,14 @@ li:hover {
    font-size: 30px;
    margin-top: -80px;
    height: 40px;
+   
  }
  
  .card:hover {
    transform: scale(0.9, 0.9);
    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
      -5px -5px 30px 15px rgba(0,0,0,0.22);
+     
  }
 
 /* =============================== END Customize section ================================== */
@@ -699,3 +703,166 @@ li:hover {
 
 
 /* =============================== END News section ================================== */
+
+
+
+/* ===============================  section Join================================== */
+.join{
+   background-image:url(..//images/IMAG-3.png);
+   background-repeat: no-repeat;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   
+}
+.title_join{
+   color: #141820;
+   text-align: center;
+   font-family: 'Orbitron', sans-serif;
+   font-size: 72px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 82px; 
+   margin-top: 0px;
+   border-top-width: 50px;
+   padding-top: 126px;
+}
+.section__textp{
+   color: #555;
+   text-align: center;
+   font-family: Orbitron;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 28px; 
+}
+.email-btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.mail-tt{
+   color: #555;
+   text-align: center;
+   font-family: 'Orbitron';
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 28px; 
+}
+.email-btooo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row-reverse;
+   padding-bottom: 130px;
+}
+/* ===============================  END Join================================== */
+
+
+
+
+
+
+
+/* =============================== Fooooteeer================================== */
+
+.footer {
+   height: 562px;
+   background: #222730;
+}
+.footer__content {
+   display: flex;
+   flex-direction: row; 
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding-top: 130px;
+   width: 1320px;
+
+}
+.footer_p{
+   color: #999;
+font-family: 'Orbitron';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; 
+}
+.one__section {
+width: 294px;
+height: 202px;
+}
+.twoo__section {
+   width: 168px;
+   height: 202px;
+}
+.menu__items {
+   color: #FFF;
+   font-family: 'Orbitron';
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px; 
+   text-transform: capitalize;
+   text-align: end;
+}
+.menu__cont {
+
+}
+.menu__footer {
+
+}
+.menu__link-footer {
+   color: #999;
+   font-family: 'Orbitron';
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 37.5px; 
+   text-transform: capitalize;
+}
+.free__section {
+   width: 168px;
+   height: 202px;
+}
+.four__section {
+   width: 240px;
+   height: 202px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.kvadrat{
+   width: 48px;
+   height: 48px;
+   background-color:#383D45 ;
+}
+.image_kvadrat{
+   display: flex;
+   gap: 16px;
+}
+
+.logo-footer{
+   padding-top: 22px;
+
+}
+.copiright{
+   text-align: center;
+   padding-top: 49px;
+   padding-bottom: 61px;
+   color: #898989;
+   text-align: center;
+   font-family: Orbitron;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 18px;
+   border-bottom-width: 61px;
+}
+hr{
+   margin-top: 77px; 
+   width: 1320px;
+   height: 1px;
+   background: #3E3E3E;
+}
